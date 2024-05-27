@@ -1,0 +1,17 @@
+.vscode
+.vscode/
+.vscode/*
+config.py
+.build
+.build/
+.build/*
+.dist
+.dist/
+.dist/*
+
+CMakeLists.txt
+*.exe
+*.mp3
+*.session
+*.spec
+
