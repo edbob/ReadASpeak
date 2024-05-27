@@ -1,2 +1,2 @@
 # ReadASpeak
-Кeads and speaks telegram messages aloud.
+Reads and speaks telegram messages aloud.
