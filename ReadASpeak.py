@@ -47,6 +47,10 @@ try:
         #Polls the bot
         print('Polling...')
 
+        eel.init('./web')
+        eel.start('main.html', mode='chrome-app', port=3333, cmdline_args=['--start-fullscreen', '--browser-startup-dialog'], size= (200, 100), position= (300, 50))
+        #eel.start('main.html', size=(400, 400) , position=(500, 500), port=8888)
+          
         #Runs the event loop until the library is disconnected.
         client.run_until_disconnected()
 
@@ -55,7 +59,3 @@ try:
         
 except OSError as error:
     print("Результат ошибки: ", error)
-    
-eel.init('./web')
-eel.start('main.html', mode='chrome-app', port=3333, cmdline_args=['--start-fullscreen', '--browser-startup-dialog'], size= (200, 100), position= (300, 50))
-#eel.start('main.html', size=(400, 400) , position=(500, 500), port=8888)  
