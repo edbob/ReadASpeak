@@ -8,6 +8,9 @@ config.py
 .dist
 .dist/
 .dist/*
+.__pycache__
+.__pycache__/
+.__pycache__/*
 
 CMakeLists.txt
 *.exe

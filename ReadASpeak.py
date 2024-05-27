@@ -3,14 +3,13 @@ from telethon import Button, TelegramClient, events, errors
 from gtts import gTTS
 import os, time
 import emoji
-import config 
-from config import conf
+import config
 
-client = TelegramClient(conf.User['name_client'], conf.User['api_id'], conf.User['api_hash'])
+client = TelegramClient(config.User['name_client'], config.User['api_id'], config.User['api_hash'])
 
 
 @eel.expose
-@client.on(events.NewMessage(chats=conf.User['HasID']))
+@client.on(events.NewMessage(chats=config.User['HasID']))
 async def my_event_handler(event):
    
 #Text on Сleaning
